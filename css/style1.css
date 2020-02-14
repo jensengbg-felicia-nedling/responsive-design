@@ -1,0 +1,388 @@
+.wrapper{
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 100%(1, 1fr);
+    
+}
+
+body{
+    color: #a5967c;
+    font-family: 'DM Serif Text', serif; 
+}
+
+
+header {
+    grid-column: -1 / 1;
+    display: flex;
+    align-items: center;
+}
+
+
+nav {
+    position: relative;
+    margin-left: auto;
+}
+
+.fas.fa-bars{
+margin-top: 0.5rem;
+margin-right: 2rem;
+}
+
+.burger-menu{
+    width: 5rem;
+    height: 10rem;
+    background:  #d2cdc5;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    transform: translate(-999rem, 0);
+    position: absolute;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    top: 1rem;
+    left: 1.5rem;
+
+}
+
+input:checked ~.burger-menu{
+    transform: translateX(-70px)
+}
+
+nav a{
+    justify-content: space-around;
+    text-decoration: none;
+    margin: 0 .5rem;
+    color: black;
+    
+}
+
+
+
+.logo {
+    font-family: 'DM Serif Text', serif;
+    font-size: x-large;
+}
+
+
+/*Main page header*/
+.main-image{
+    display: flex;
+    flex-direction: column;
+    grid-column: -1 / 1;
+    background-repeat: no-repeat;
+    height: 25rem;
+    background-size: cover;
+    background-image: url(../img/photo-1470219556762-1771e7f9427d.jpeg);
+    justify-content: center;
+    align-items: center;    
+    font-family: 'DM Serif Text', serif;
+    font-size: 130%;
+   
+}
+
+.main-image p  a {
+    margin: 0.2rem;
+    color: white;
+    text-align: center;
+}
+
+.main-image h1{
+    text-shadow: 2px 2px 20px black;
+}
+
+
+main {
+    grid-column: -1 / 1;
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-direction: column;
+    
+   
+
+}
+
+/*Main Page room images*/
+.small-images{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    justify-content: center;
+    margin: 0.2rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'DM Serif Text', serif;
+       
+}
+
+section{
+    color: white;
+}
+
+
+
+section a{
+    width: 6rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 3px;
+    color: #a5967c;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.small-images h2,h4,p,button {
+    margin: 0.2rem 0;
+    
+}
+
+.img1 {
+   
+    background-image: url(../img/doublebedroom.jpeg);
+}
+
+
+.img2 {
+    background-image: url(../img/brownbedroom.jpg);
+}
+
+.img3 {
+    background-image: url(../img/spa.jpeg);
+}
+
+.img4 {
+    background-image: url(../img/bar.jpeg)
+}
+
+/*Mail section*/
+.special-offers{
+    grid-column: -1 / 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a5967c;
+    color: white;
+    font-family: 'DM Serif Text', serif;
+
+}
+
+.special-offers p{
+    text-align: center;
+}
+
+
+.mail{
+    display: flex;
+    margin-bottom: 2rem;
+   height: 1.5rem;
+   border-radius: 3px;
+   border: 0px;
+}
+
+.knapp{
+    height: 1.2rem;
+    width: 1.2;
+}
+
+.input-mail{
+
+    border-radius: 5px;
+    border: 0px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+footer h3{
+    color: black;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+    height: 10%;
+  }
+
+
+.booking{
+    background-image: url(../img/lobby.jpeg);
+    background-size: cover;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    grid-column: -1 / 1;
+   
+
+    
+}
+
+.departure{
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 80%;
+    color: grey;
+}
+
+.room-type{
+    display: flex;
+    width: 100%;
+    margin: .5rem 0;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 80%;
+    color: grey
+}
+
+.booking-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/kuddar.jpg);
+    background-size: cover;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+  
+
+}
+
+.booking-background h1,h3{
+    display: flex;;
+
+    justify-content: center;
+    text-align: center;
+    color: #776a54;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.email{
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    justify-content: center;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 80%;
+    color: grey 
+    
+}
+
+.send{
+    width: 6rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 3px;
+    margin: 0 .2rem;
+    color: #a5967c;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    
+}
+
+.send-mail {
+    display:flex;
+    width: 100%;
+    justify-content: center;    
+}
+
+
+
+  /*Responsive Media*/
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        }
+
+        .fa.fa-bars {
+            display: none;
+        }
+
+        .burger-menu{
+            width: 100%;
+            height: auto;
+            background:  white;
+            transform: none;
+            position: relative;
+            display: block;
+        }
+
+
+        main{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .small-images{
+            width: 49%;
+          
+        }
+    
+        header{
+            font-size: 150%;
+            font-weight: 200;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        p{
+            font-size: 1.2rem;
+            width: 50%;
+        }
+    
+        h4{
+            font-size: 1rem;
+        }
+    
+        footer{
+            grid-column: -1 / 1;
+            width: 100%;
+        }
+    
+
+}
+
+
